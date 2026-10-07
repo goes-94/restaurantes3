@@ -848,13 +848,13 @@ html {
   scroll-behavior: smooth;
 }
 body {
-    background-color: bisque;
+  background-color: rgba(13, 13, 13, 0.95); /* leve fundo escuro */
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
-    width: 100%;
+    width: 130%;
     color: #fff;
-    max-width: 100%;
+    max-width: 130%;
     overflow-x: hidden;
 }
 /* Imagem de fundo fixa */
@@ -863,7 +863,7 @@ body::before {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 120%;
   height: 400px; /* altura visível do fundo */
   background-image: url('imgs/imgheader.png');
   background-size: cover;
@@ -965,7 +965,7 @@ section.product-list {
   z-index: 0; /* acima da imagem */
   margin-top: 50px; /* sobe sobre o fundo */
   background-color: rgba(13, 13, 13, 0.95); /* leve fundo escuro */
-  padding: 80px 60px;
+  padding: 80px -30px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 190%;
@@ -1035,7 +1035,7 @@ section.product-list {
     margin-top: 100px;
 }
 .container{
-    width: auto;
+    width: 100%;
     margin-top: 5em;
     z-index: -2;
 
