@@ -13,10 +13,10 @@
         
         <nav>
             <ul class="menu">
-                <li><a><strong>Sobre</strong></a></li>
-                <li><a><strong>Reservas</strong></a></li>
-                <li><a><strong>Cardápio</strong></a></li>
-                <li><a><strong>Contato</strong></a></li>
+                <li><a href="#sobre"><strong>Sobre</strong></a></li>
+                <li><a href="#reservas"><strong>Reservas</strong></a></li>
+                <li><a href="#cardapio"><strong>Cardápio</strong></a></li>
+                <li><a href="#contatos"><strong>Contato</strong></a></li>
             </ul>
             <div class="reserva">
                 <button><a href="https://wa.me/5541984205083" target="_blank" class="reserva"><strong>Faça sua Reserva</strong></a></button>
@@ -25,17 +25,17 @@
         </nav>
     </Header>
     <section class="product-list">
-        <div class="descricao">
+        <div class="descricao" >
             <h1 class="paga-title">Feito no Fogo Intenso & Verdadeiro.</h1>
-            <div><h3 class="description-text">Sabor com simplicidade, feito no fogo. Alta gastronomia descomplicada — na brasa, na lenha e na alma.</h3></div>
+            <div id="sobre"><h3 class="description-text">Sabor com simplicidade, feito no fogo. Alta gastronomia descomplicada — na brasa, na lenha e na alma.</h3></div>
 
         </div>
         <div class="main-buttons">
             <ul class="list-nav">
-                <li><a href="">Programação</a></li>
-                <li><a href="">Reservas</a></li>
-                <li><a href="">Cardápio</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#programacao">Programação</a></li>
+                <li><a href="#reservas">Reservas</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contatos">Contato</a></li>
             </ul>
             <h4 class="descubra">Descubra o Restaurante</h4>
         </div>
@@ -124,7 +124,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <div class="">
+                        <div class="" id="programacao">
                             <div class="quarta-quinta">
                                 <h3>MUSICA AO VIVO</h3>
                                 <h1>Quata & Quinta</h1>
@@ -199,7 +199,7 @@
 
         <div class="instrucao-reserv">
             <div class="exp-numb">
-                <div class="title-exp">
+                <div class="title-exp" id="reservas">
                     <div> <h3 class="reserv-title">Reservas</h3></div>
                     <div><h1 class="exp-title">Reserve sua <br>experiência</h1></div>
                     <p>Garanta seu lugar à mesa e viva o Feu sem pressa. As reservas são feitas de forma simples, direto pelo WhatsApp — e quem reserva ganha um agrado da casa</p>
@@ -233,7 +233,7 @@
             <img class="img-exp" src="./imgs/imgexperiencia.png">
         </div>
 
-        <div class="ver-cardapio">
+        <div class="ver-cardapio" id="cardapio">
             <div class="slogan-cardapio">
                 <h3>Ingredientes frescos, selecionados e sazonais</h3>
                 <h1 class="knows">Conheça o</h1>
@@ -245,7 +245,7 @@
 
         </div>
 
-        <div class="contato">
+        <div class="contato" id="contatos">
             <div class="inf-contato">
                 <h1 class="title-contact">Contato</h1><h1 class="title-contact">&</h1>
                 <h1 class="title-contact">Reservas</h1>
@@ -279,7 +279,47 @@
             <img class="img-mapa" src="imgs/img-mapa.png">
 
         </div>
+
+        <div class="menu-cardapio" id="flipbook">
+            <div class="cardapio-track">
+                <div class="img-cardapio"><img src="./imgs/acompanhamento-menu.png"></div>
+                <div class="img-cardapio"><img src="./imgs/porções-menu.png"></div>
+                <div class="img-cardapio"><img src="./imgs/bebidas-menu.png"></div>
+            </div>
+            <div class="cardapio-btn">
+                <button class="flip-prev"><</button>
+                <button class="flip-next">></button>
+            </div>
+        </div>
+
+        <!-- <div class="flipbook">
+            <div class="page">
+                <img src="./imgs/acompanhamento-menu.png" alt="Acompanhamentos">
+            </div>
+            <div class="page">
+                <img src="./imgs/porções-menu.png" alt="Porções">
+            </div>
+            <div class="page">
+                <img src="./imgs/bebidas-menu.png" alt="Bebidas">
+        </div> -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
+        <script>
         
+        $(document).ready(function() {
+            $("#flipbook").turn({
+            width: 800,
+            height: 600,
+            autoCenter: true,
+            elevation: 50,
+            gradients: true,
+            duration: 1000
+            });
+        });
+        </script>
+
+
     </section>
 <script src="./script.js"></script>
 </body>
