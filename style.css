@@ -672,6 +672,9 @@ img {
     width: 22%;
     height: 40px;
     margin-top: 10px;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
 
 
 }
@@ -683,6 +686,11 @@ img {
     color: rgb(255, 255, 255);
     border-radius: 15px;
 
+}
+.btn-cardapio:focus{
+    outline: none;
+    box-shadow: 0 0 5px #ff9900;
+    border: none;
 }
 
 .contato{
@@ -804,7 +812,7 @@ img {
     /* transition: 0.4s; */
 }
 
- .cardapio-btn {
+ /* .cardapio-btn {
     display: flex;
     justify-content: right;
     align-items: center;
@@ -818,6 +826,16 @@ img {
 .cardapio-btn{
     border: gray;
     border-radius: 35px;
+
+} */
+
+.flip{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0%;
+    margin-top: 250px;
 
 }
 .flip-next{
@@ -1741,44 +1759,78 @@ img {
     /* transition: 0.4s; */
 }
 
- .cardapio-btn {
-    display: flex;
-    justify-content: right;
+ /* .cardapio-btn {
+     display: flex; 
+    justify-content: flex-end;
     align-items: center;
     font-size: 2em;
     flex-direction: row;
     margin-top: 300px;
-    z-index: 999;
+    z-index: 2;
     cursor: pointer;
+} */
+
+.cardapio-btn button{
+  width: 50px;   /* ou o tamanho desejado */
+  height: 80px;
+  /* margin-left: 10px; */
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  justify-content:  flex-end;
 }
 
-.cardapio-btn{
+/* .cardapio-btn{
     border: gray;
     border-radius: 35px;
+    outline: none;
+
+} */
+
+.cardapio-bt button{
+    width: 40px;
+    height: 70px;
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    align-items: center;
+    flex-direction: row;
+    /* margin-left: 750px; */
+
+
 
 }
+
 .flip-next{
-    font-size: 2em;
+    /* font-size: 2em; */
     border-radius: 25px;
     border-color: gray;
     background-color: brown;
     cursor: pointer;
     color: #fff;
+    /* display: flex; */
+    justify-content: flex-end;
 
 }
 
 .flip-next:hover{
     background-color: blueviolet;
     transition: 0.4s;
+    outline: none;
 }
 
 .flip-prev{
-    font-size: 2em;
+    justify-content: flex-end;
     border-radius: 25px;
     border-color: gray;
     background-color: brown;
     cursor: pointer;
     color: #fff;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    border-bottom: 0;
+    /* margin-left: 750px;
+    margin-top: 300px; */
 
 }
 
@@ -1786,12 +1838,21 @@ img {
     background-color: blueviolet;
     transition: 0.4s;
 }
-#flipbook {
+.flip{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 10px;
+    margin: 0%;
+    margin-top: 250px;
+
+}
+/* #flipbook {
   width: 800px;
   height: 600px;
   margin: 0 auto;
   z-index: 0;
-}
+} */
 #flipbook img {
     
 }
