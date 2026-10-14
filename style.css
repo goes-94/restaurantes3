@@ -262,6 +262,8 @@ section.product-list {
     color: #fff;
     flex: 1;
     text-align: right;
+    border-radius: 20px;
+
 }
 .product-image{
     justify-content: flex-end;
@@ -304,6 +306,7 @@ section.product-list {
     color: #fff;
     /* flex: 1; */
     text-align: left;
+    border-radius: 20px;
 }
 .product-image2{
     /* justify-content: flex-start; */
